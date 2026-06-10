@@ -114,10 +114,9 @@
   }
 
   /* ---------- Image click → nomination ---------- */
-  const NOM_URL = 'https://goldentreeawards.com/award-nomination';
   document.querySelectorAll('img[data-clickable]').forEach(img => {
     img.style.cursor = 'pointer';
-    img.addEventListener('click', () => window.open(NOM_URL, '_blank', 'noopener'));
+    img.addEventListener('click', () => { window.location.href = 'award-nomination.html'; });
   });
 
   /* ---------- Newsletter form ---------- */

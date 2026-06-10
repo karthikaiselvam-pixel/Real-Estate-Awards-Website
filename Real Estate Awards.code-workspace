@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../Downloads/final-photos"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5507,
+		"liveServer.settings.multiRootWorkspaceName": "Real Estate Awards"
+	}
+}

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /build.py
+Disallow: /build_all.py
+Disallow: /content_*.py
+
+Sitemap: https://goldentreeawards.com/world-real-estate-awards/sitemap.xml

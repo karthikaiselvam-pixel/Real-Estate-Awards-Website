@@ -34,9 +34,10 @@
 }
 .award-nomination-form-section iframe {
   width: 100%;
-  min-height: 1800px;
+  height: 1000px;
   border: 0;
   display: block;
+  transition: height 0.3s ease;
 }
 </style>
 </head>
@@ -145,9 +146,10 @@
     id="goldentreeNominationForm"
     title="Golden Tree Awards Nomination Form"
     width="100%"
-    height="1800"
+    height="1000"
     style="border:0; width:100%; max-width:100%; display:block;"
-    loading="lazy">
+    allow="payment *; forms *"
+    scrolling="no">
   </iframe>
 </section>
 
@@ -286,24 +288,24 @@
   const iframeUrl =
     'https://goldentreeawards.com/nominate.html?' + params.toString();
 
-  document.getElementById('goldentreeNominationForm').src = iframeUrl;
-
-  /* Dynamic iframe height via postMessage */
   var iframe = document.getElementById('goldentreeNominationForm');
+  iframe.src = iframeUrl;
+
+  /* Resize iframe to fit content via postMessage */
+  function setIframeHeight(h) {
+    var min = 800;
+    iframe.style.height = Math.max(min, h) + 'px';
+  }
+
   window.addEventListener('message', function (e) {
     if (!e.data) return;
     var d = e.data;
     if (typeof d === 'object' && d.type === 'iframeHeight' && typeof d.height === 'number') {
-      iframe.style.minHeight = d.height + 'px';
-    }
-    if (typeof d === 'object' && d.frameHeight && typeof d.frameHeight === 'number') {
-      iframe.style.minHeight = d.frameHeight + 'px';
-    }
-    if (typeof d === 'string') {
-      try {
-        var parsed = JSON.parse(d);
-        if (parsed.height) iframe.style.minHeight = parsed.height + 'px';
-      } catch (err) {}
+      setIframeHeight(d.height);
+    } else if (typeof d === 'object' && d.frameHeight && typeof d.frameHeight === 'number') {
+      setIframeHeight(d.frameHeight);
+    } else if (typeof d === 'string') {
+      try { var p = JSON.parse(d); if (p.height) setIframeHeight(p.height); } catch (e) {}
     }
   });
 

@@ -125,7 +125,7 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); line-height: 1.25; color: 
 }
 .logo-text { line-height: 1.2; }
 .logo-text .line1 { font-family: var(--font-heading); font-size: 0.92rem; font-weight: 700; color: var(--gold); letter-spacing: 0.03em; white-space: nowrap; }
-.logo-text .line2 { font-size: 0.65rem; font-weight: 500; color: rgba(255,255,255,0.65); letter-spacing: 0.1em; text-transform: uppercase; white-space: nowrap; }
+.logo-text .line2 { font-family: var(--font-heading); font-size: 0.92rem; font-weight: 700; color: var(--gold); letter-spacing: 0.03em; white-space: nowrap; }
 
 /* Primary Nav */
 .primary-nav { display: flex; align-items: center; gap: 0.15rem; }

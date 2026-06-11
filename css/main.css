@@ -646,11 +646,32 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); line-height: 1.25; color: 
 .breadcrumb span { color: var(--gold); }
 .breadcrumb-sep { color: rgba(255,255,255,0.35); }
 .page-hero h1 {
-  font-size: clamp(1.8rem, 4vw, 3rem);
-  color: var(--white); margin-bottom: 0.75rem;
+  display: flex; flex-direction: column; gap: 0.3rem;
+  margin-bottom: 1.25rem;
 }
-.page-hero h1 span { color: var(--gold); }
-.page-hero p { font-size: 1.05rem; color: rgba(255,255,255,0.75); max-width: 620px; }
+.page-hero h1 .hl-label {
+  font-family: var(--font-body);
+  font-size: 0.8rem; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: var(--gold); display: block;
+}
+.page-hero h1 .hl-main {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 4.5vw, 3.4rem); font-weight: 800;
+  color: var(--white); line-height: 1.1; display: block;
+}
+.page-hero h1 .hl-sub {
+  font-family: var(--font-heading);
+  font-size: clamp(1.05rem, 2.2vw, 1.5rem); font-weight: 400;
+  color: rgba(200,164,93,0.88); font-style: italic;
+  line-height: 1.35; display: block;
+}
+/* Legacy span inside h1 fallback */
+.page-hero h1 > span:not([class]) { color: var(--gold); }
+.page-hero p,
+.page-hero-subtitle { font-size: 1.05rem; color: rgba(255,255,255,0.75); max-width: 620px; margin-bottom: 0; }
+/* page-hero-title used on new-format pages — inherits hl-* styles via h1 */
+.page-hero-title { font-family: var(--font-heading); color: var(--white); margin-bottom: 0.75rem; }
 .page-hero-meta { display: flex; gap: 1.5rem; margin-top: 1.5rem; flex-wrap: wrap; }
 .page-hero-meta span { font-size: 0.8rem; color: rgba(255,255,255,0.6); display: flex; align-items: center; gap: 0.35rem; }
 

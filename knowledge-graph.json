@@ -1,0 +1,49 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "World Real Estate Excellence Awards",
+  "alternateName": [
+    "WREXA",
+    "World Real Estate Awards"
+  ],
+  "url": "https://worldrealestateaward.com",
+  "foundingDate": "2019",
+  "description": "International real estate awards programme",
+  "awardCategory": [
+    "Best Real Estate Developer",
+    "Best Luxury Real Estate Developer",
+    "Best Property Development Company",
+    "Best Residential Project",
+    "Best Commercial Project",
+    "Best Mixed Use Development",
+    "Best Sustainable Development",
+    "Best Smart Building Project",
+    "Best Real Estate Agency",
+    "Best Property Consultancy",
+    "Best Real Estate Brokerage",
+    "Best Property Management Company",
+    "Best Facility Management Company",
+    "Best Construction Company",
+    "Best Architecture Firm",
+    "Best Interior Design Firm",
+    "Best PropTech Company",
+    "Best Property Investment Company",
+    "Best Real Estate Marketing Campaign",
+    "Best Real Estate CEO",
+    "Best Real Estate Entrepreneur",
+    "Best Emerging Developer"
+  ],
+  "location": {
+    "@type": "Place",
+    "name": "Dubai, UAE"
+  },
+  "event": {
+    "@type": "Event",
+    "name": "World Real Estate Excellence Awards Gala 2026",
+    "startDate": "2026-11-14T17:00",
+    "location": {
+      "@type": "Place",
+      "name": "Westin Marina Hotel, Dubai, UAE"
+    }
+  }
+}

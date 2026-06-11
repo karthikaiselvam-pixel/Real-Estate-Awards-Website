@@ -1,7 +1,21 @@
 User-agent: *
 Allow: /
-Disallow: /build.py
-Disallow: /build_all.py
-Disallow: /content_*.py
 
-Sitemap: https://goldentreeawards.com/world-real-estate-awards/sitemap.xml
+Disallow: /privacy-policy.html
+Disallow: /terms-conditions.html
+Disallow: /refund-policy.html
+
+Sitemap: https://worldrealestateaward.com/sitemap.xml
+
+# AI/LLM crawlers
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Googlebot
+Allow: /

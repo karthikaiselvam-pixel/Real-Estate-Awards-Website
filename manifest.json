@@ -1,0 +1,18 @@
+{
+  "name": "World Real Estate Excellence Awards",
+  "short_name": "WREXA",
+  "description": "International jury-led awards programme recognising excellence in real estate globally.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0B163D",
+  "theme_color": "#C8A45D",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'%3E%3Crect width='192' height='192' rx='24' fill='%230B163D'/%3E%3Ctext x='96' y='130' font-family='Georgia,serif' font-size='110' font-weight='700' fill='%23C8A45D' text-anchor='middle'%3EW%3C/text%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ],
+  "categories": ["business", "real estate", "awards"]
+}

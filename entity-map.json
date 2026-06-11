@@ -1,0 +1,28 @@
+{
+  "award_programme": "World Real Estate Excellence Awards",
+  "parent_organisation": "Golden Tree Events",
+  "location": "Dubai, UAE",
+  "industries_served": [
+    "Real Estate",
+    "Property Development",
+    "Architecture",
+    "Interior Design",
+    "PropTech",
+    "Facility Management",
+    "Construction"
+  ],
+  "regions": [
+    "Asia",
+    "Europe",
+    "Middle East",
+    "North America",
+    "South America",
+    "Africa",
+    "Oceania",
+    "GCC"
+  ],
+  "related_awards": [
+    "Golden Tree Awards",
+    "International Property Awards"
+  ]
+}

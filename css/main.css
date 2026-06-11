@@ -213,7 +213,7 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); line-height: 1.25; color: 
 }
 .hero-slide.active { opacity: 1; }
 .hero-slide img {
-  width: 100%; height: 100%; object-fit: cover;
+  width: 100%; height: 100%; object-fit: cover; object-position: top center;
   filter: brightness(0.38);
 }
 .hero-content {
@@ -331,7 +331,7 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); line-height: 1.25; color: 
 .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
 .about-images { position: relative; }
 .about-img-main {
-  width: 100%; aspect-ratio: 4/3; object-fit: cover;
+  width: 100%; aspect-ratio: 4/3; object-fit: cover; object-position: top center;
   border-radius: var(--radius-lg); box-shadow: var(--shadow-lg);
 }
 .about-img-badge {
@@ -367,7 +367,7 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); line-height: 1.25; color: 
 }
 .category-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-bottom-color: var(--gold); }
 .category-card-img {
-  width: 100%; height: 220px; object-fit: cover;
+  width: 100%; height: 220px; object-fit: cover; object-position: top center;
   transition: transform 0.6s ease; cursor: pointer;
 }
 .category-card:hover .category-card-img { transform: scale(1.04); }
@@ -479,7 +479,7 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); line-height: 1.25; color: 
 .gallery-item.wide { grid-column: span 2; }
 .gallery-item.tall { grid-row: span 2; }
 .gallery-item img {
-  width: 100%; height: 100%; object-fit: cover;
+  width: 100%; height: 100%; object-fit: cover; object-position: top center;
   transition: transform 0.6s ease; cursor: pointer;
 }
 .gallery-item img:hover { transform: scale(1.06); }
@@ -519,7 +519,7 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); line-height: 1.25; color: 
   transition: all var(--transition);
 }
 .article-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
-.article-img { width: 100%; height: 200px; object-fit: cover; cursor: pointer; transition: transform 0.5s; }
+.article-img { width: 100%; height: 200px; object-fit: cover; object-position: top center; cursor: pointer; transition: transform 0.5s; }
 .article-card:hover .article-img { transform: scale(1.04); }
 .article-img-wrap { overflow: hidden; }
 .article-body { padding: 1.25rem; }
@@ -599,7 +599,7 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); line-height: 1.25; color: 
 }
 .region-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
 .region-card img {
-  width: 100%; height: 100%; object-fit: cover;
+  width: 100%; height: 100%; object-fit: cover; object-position: top center;
   transition: transform 0.6s; cursor: pointer;
 }
 .region-card:hover img { transform: scale(1.07); }
@@ -633,7 +633,7 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); line-height: 1.25; color: 
 }
 .page-hero-img {
   position: absolute; inset: 0; width: 100%; height: 100%;
-  object-fit: cover; filter: brightness(0.25); z-index: 0;
+  object-fit: cover; object-position: top center; filter: brightness(0.25); z-index: 0;
 }
 .page-hero-content { position: relative; z-index: 1; }
 .breadcrumb {
@@ -706,7 +706,7 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); line-height: 1.25; color: 
   transition: all var(--transition);
 }
 .winner-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
-.winner-img { width: 100%; height: 180px; object-fit: cover; cursor: pointer; transition: transform 0.5s; }
+.winner-img { width: 100%; height: 180px; object-fit: cover; object-position: top center; cursor: pointer; transition: transform 0.5s; }
 .winner-card:hover .winner-img { transform: scale(1.05); }
 .winner-body { padding: 1.1rem; }
 .winner-year {
@@ -1104,7 +1104,7 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); line-height: 1.25; color: 
 .sidebar-articles { display: flex; flex-direction: column; gap: 0.85rem; }
 .sidebar-article { display: flex; gap: 0.75rem; align-items: flex-start; }
 .sidebar-article-img {
-  width: 64px; height: 64px; object-fit: cover;
+  width: 64px; height: 64px; object-fit: cover; object-position: top center;
   border-radius: var(--radius); flex-shrink: 0;
 }
 .sidebar-article-title {
@@ -1130,3 +1130,49 @@ h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading); line-height: 1.25; color: 
 .breadcrumb a { color: rgba(255,255,255,0.6); }
 .breadcrumb a:hover { color: var(--gold); }
 .breadcrumb-sep { color: var(--gold); }
+
+/* ============================================================
+   VIDEO THUMBNAILS & MODAL
+   ============================================================ */
+.video-embed-wrap.video-thumb {
+  position: relative; cursor: pointer; overflow: hidden;
+  background: #000; border-radius: var(--radius);
+}
+.video-embed-wrap.video-thumb img {
+  width: 100%; height: 100%; object-fit: cover; object-position: top center;
+  transition: transform 0.4s, opacity 0.3s;
+  display: block;
+}
+.video-embed-wrap.video-thumb:hover img { transform: scale(1.04); opacity: 0.8; }
+.video-play-btn {
+  position: absolute; top: 50%; left: 50%;
+  transform: translate(-50%,-50%);
+  width: 60px; height: 60px; border-radius: 50%;
+  background: rgba(200,164,93,0.9);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.4rem; color: #fff; pointer-events: none;
+  transition: background 0.25s, transform 0.25s;
+}
+.video-embed-wrap.video-thumb:hover .video-play-btn {
+  background: var(--gold); transform: translate(-50%,-50%) scale(1.1);
+}
+.video-modal {
+  position: fixed; inset: 0; z-index: 9999;
+  background: rgba(0,0,0,0.88);
+  display: flex; align-items: center; justify-content: center;
+}
+.video-modal[hidden] { display: none; }
+.video-modal-inner {
+  position: relative; width: 90%; max-width: 900px;
+}
+.video-modal-embed { position: relative; padding-bottom: 56.25%; height: 0; }
+.video-modal-embed iframe {
+  position: absolute; inset: 0; width: 100%; height: 100%; border: none;
+  border-radius: var(--radius);
+}
+.video-modal-close {
+  position: absolute; top: -2.5rem; right: 0;
+  background: none; border: none; color: #fff;
+  font-size: 1.5rem; cursor: pointer; line-height: 1;
+}
+.video-modal-close:hover { color: var(--gold); }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>World Real Estate Excellence Awards</title>
+  <link href="https://worldrealestateaward.com" />
+  <link rel="self" href="https://worldrealestateaward.com/atom.xml" />
+  <updated>2026-06-11T00:00:00Z</updated>
+  <id>https://worldrealestateaward.com/</id>
+  <entry>
+    <title>Nominations Open — World Real Estate Excellence Awards 2026</title>
+    <link href="https://worldrealestateaward.com/award-nomination" />
+    <id>https://worldrealestateaward.com/award-nomination</id>
+    <updated>2026-06-11T00:00:00Z</updated>
+    <summary>Submit your nomination for the World Real Estate Excellence Awards 2026. Gala ceremony at Westin Marina Hotel, Dubai, 14 November 2026.</summary>
+  </entry>
+</feed>

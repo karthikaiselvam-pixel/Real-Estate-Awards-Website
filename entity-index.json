@@ -1,0 +1,44 @@
+{
+  "entities": [
+    {
+      "name": "World Real Estate Excellence Awards",
+      "type": "Organization",
+      "url": "https://worldrealestateaward.com"
+    },
+    {
+      "name": "Golden Tree Events",
+      "type": "Organization",
+      "url": "https://goldentreeawards.com"
+    },
+    {
+      "name": "Westin Marina Hotel",
+      "type": "Place",
+      "location": "Dubai, UAE"
+    },
+    {
+      "name": "Dubai",
+      "type": "City",
+      "country": "UAE"
+    },
+    {
+      "name": "Real Estate Developer",
+      "type": "Occupation"
+    },
+    {
+      "name": "Property Developer",
+      "type": "Occupation"
+    },
+    {
+      "name": "Architecture Firm",
+      "type": "Organization"
+    },
+    {
+      "name": "Interior Designer",
+      "type": "Occupation"
+    },
+    {
+      "name": "PropTech",
+      "type": "Industry"
+    }
+  ]
+}

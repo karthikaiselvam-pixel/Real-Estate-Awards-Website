@@ -1,0 +1,12 @@
+/* TEAM */
+Organisation: Golden Tree Events
+Website: https://goldentreeawards.com
+Contact: awards@goldentreeawards.com
+Location: Iris Bay Tower, Business Bay, Dubai, UAE
+
+/* THANKS */
+All the nominees and winners of the World Real Estate Excellence Awards for their contributions to the global property industry.
+
+/* SITE */
+Language: English
+Doctype: HTML5

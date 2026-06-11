@@ -5,10 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Award Nomination | Submit Your Nomination</title>
-<meta name="description" content="Submit your nomination through the official Golden Tree Awards nomination platform." />
+<meta name="description" content="Submit your nomination for international recognition through the official Golden Tree Awards nomination platform." />
 <meta name="robots" content="index, follow" />
 <meta name="theme-color" content="#0B163D" />
-<link rel="canonical" href="award-nomination.html" />
+<link rel="canonical" href="https://worldrealestateaward.com/award-nomination" />
 
 <meta property="og:type" content="website" />
 <meta property="og:title" content="Award Nomination | Submit Your Nomination" />
@@ -22,28 +22,56 @@
 <link rel="stylesheet" href="css/main.css" />
 
 <style>
-/* Nomination page — full-width form layout */
-.nomination-page-wrap {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.nomination-page-wrap { display: flex; flex-direction: column; min-height: 100vh; }
+.nomination-hero {
+  background: linear-gradient(135deg, #0B163D 0%, #162457 100%);
+  padding: 6rem 0 4rem;
+  margin-top: 70px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
-.nomination-form-full {
-  flex: 1;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background: #f9f8f6;
-  border-top: 3px solid #C8A45D;
+.nomination-hero::after {
+  content: '';
+  position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23C8A45D' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+  pointer-events: none;
 }
-.nomination-form-full iframe {
-  display: block;
-  width: 100%;
-  min-height: 900px;
-  border: none;
-  background: #f9f8f6;
+.nomination-hero-eyebrow {
+  display: inline-block; font-size: 0.78rem; font-weight: 700;
+  letter-spacing: 0.2em; text-transform: uppercase;
+  color: #C8A45D; margin-bottom: 1rem;
+}
+.nomination-hero h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2rem, 4vw, 3rem); font-weight: 700;
+  color: #fff; margin-bottom: 1rem;
+}
+.nomination-hero h1 span { color: #C8A45D; }
+.nomination-hero p {
+  font-size: 1.1rem; color: rgba(255,255,255,0.78);
+  max-width: 600px; margin: 0 auto 1.75rem;
+}
+.nomination-hero-cta {
+  display: inline-block; padding: 0.85rem 2.5rem;
+  background: linear-gradient(135deg, #C8A45D, #a8843d);
+  color: #0B163D; font-weight: 700; font-size: 0.95rem;
+  letter-spacing: 0.06em; text-transform: uppercase;
+  border-radius: 2px; text-decoration: none;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.nomination-hero-cta:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200,164,93,0.4); }
+.nomination-form-section {
+  flex: 1; width: 100%; background: #f9f8f6;
+  border-top: 3px solid #C8A45D; padding: 0;
+}
+.award-nomination-container { width: 100%; }
+.award-nomination-container iframe {
+  display: block; width: 100%;
+  min-height: 1500px; border: none; background: #f9f8f6;
 }
 </style>
+<link rel="manifest" href="manifest.json" />
 </head>
 
 <body class="nomination-page-wrap">
@@ -89,8 +117,8 @@
           <a href="global-real-estate-awards.html">Global</a>
         </div>
       </div>
-      <div class="nav-item"><a class="nav-link" href="past-winners.html">Winners</a></div>
       <div class="nav-item"><a class="nav-link" href="award-judging-criteria.html">Judging</a></div>
+      <div class="nav-item"><a class="nav-link" href="nominees.html">Nominees</a></div>
       <div class="nav-item"><a class="nav-link" href="resources.html">Resources</a></div>
       <div class="nav-item"><a class="nav-link" href="blog.html">Blog</a></div>
       <div class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></div>
@@ -120,7 +148,6 @@
       <a href="luxury-property-awards-worldwide.html">Luxury Worldwide</a>
       <a href="global-real-estate-awards.html">Global Awards</a>
       <div class="mobile-nav-section-title">Programme</div>
-      <a href="past-winners.html">Past Winners</a>
       <a href="award-judging-criteria.html">Judging Process</a>
       <a href="resources.html">Resources</a>
       <a href="blog.html">Blog</a>
@@ -132,17 +159,30 @@
   </nav>
 </header>
 
-<!-- ============ FULL-WIDTH NOMINATION FORM ============ -->
-<main class="nomination-form-full" id="nomination-form" aria-label="Award Nomination Form">
-  <iframe
-    id="goldentreeNominationForm"
-    title="Award Nomination Form"
-    width="100%"
-    loading="lazy"
-    scrolling="no"
-    allowtransparency="true">
-  </iframe>
-</main>
+<!-- ============ HERO ============ -->
+<section class="nomination-hero" aria-label="Award Nomination">
+  <div class="container">
+    <span class="nomination-hero-eyebrow">World Real Estate Excellence Awards</span>
+    <h1>Award <span>Nomination</span></h1>
+    <p>Submit your nomination for international recognition and industry excellence.</p>
+    <p style="font-size:0.95rem;color:rgba(255,255,255,0.6);margin-bottom:1.75rem;">Complete the nomination form below.</p>
+    <a class="nomination-hero-cta" href="#nomination-form">Start Your Nomination ›</a>
+  </div>
+</section>
+
+<!-- ============ NOMINATION FORM ============ -->
+<section class="nomination-form-section" id="nomination-form" aria-label="Award Nomination Form">
+  <div class="award-nomination-container">
+    <iframe
+      id="goldentreeNominationForm"
+      title="Award Nomination Form"
+      width="100%"
+      height="1500"
+      style="border:none;"
+      loading="lazy">
+    </iframe>
+  </div>
+</section>
 
 <!-- ============ FOOTER ============ -->
 <footer class="site-footer">
@@ -170,12 +210,12 @@
             <a href="about.html">About</a>
             <a href="award-nomination.html">Nominate Now</a>
             <a href="award-categories.html">Categories</a>
-            <a href="past-winners.html">Past Winners</a>
             <a href="award-judging-criteria.html">Judging</a>
             <a href="gallery.html">Gallery</a>
             <a href="blog.html">Blog</a>
             <a href="faq.html">FAQ</a>
             <a href="contact.html">Contact</a>
+            <a href="nominees.html">Nominees</a>
           </div>
         </div>
 
@@ -206,6 +246,24 @@
             <a href="sustainable-design-awards.html">Sustainable</a>
             <a href="property-management-awards.html">Property Mgmt</a>
             <a href="real-estate-agency-awards.html">Agencies</a>
+            <a href="construction-awards.html">Construction</a>
+            <a href="proptech-awards.html">PropTech</a>
+            <a href="facility-management-awards.html">Facility Mgmt</a>
+            <a href="urban-development-awards.html">Urban Dev</a>
+            <a href="property-investment-awards.html">Investment</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Guides &amp; FAQs</h4>
+          <div class="footer-links">
+            <a href="how-to-nominate.html">How to Nominate</a>
+            <a href="how-to-win-a-real-estate-award.html">How to Win</a>
+            <a href="why-real-estate-awards-matter.html">Why Awards Matter</a>
+            <a href="how-awards-help-real-estate-companies.html">Business Benefits</a>
+            <a href="real-estate-awards-faq.html">Awards FAQ</a>
+            <a href="nomination-faq.html">Nomination FAQ</a>
+            <a href="gala-faq.html">Gala FAQ</a>
           </div>
         </div>
 
@@ -217,11 +275,10 @@
             <button type="submit" class="newsletter-btn">Subscribe</button>
           </form>
           <div class="social-links">
-            <a class="social-link" href="#" aria-label="LinkedIn">in</a>
-            <a class="social-link" href="#" aria-label="Instagram">ig</a>
-            <a class="social-link" href="#" aria-label="Facebook">f</a>
-            <a class="social-link" href="#" aria-label="X / Twitter">x</a>
-            <a class="social-link" href="#" aria-label="YouTube">▶</a>
+            <a class="social-link" href="https://linkedin.com/company/goldentreeeventsdubai" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
+            <a class="social-link" href="https://www.instagram.com/goldentreeeventsdubai/" target="_blank" rel="noopener" aria-label="Instagram">ig</a>
+            <a class="social-link" href="https://www.facebook.com/AwardsByGoldenTreeDubai" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+            <a class="social-link" href="https://www.youtube.com/channel/UCar_yBf569VvrfVy4V-qSXg/videos" target="_blank" rel="noopener" aria-label="YouTube">▶</a>
           </div>
         </div>
       </div>
@@ -230,9 +287,13 @@
     <div class="footer-bottom">
       <p>© 2026 World Real Estate Excellence Awards. All rights reserved.</p>
       <div class="footer-legal">
-        <a href="privacy-policy.html">Privacy Policy</a>
-        <a href="terms-conditions.html">Terms &amp; Conditions</a>
-        <a href="refund-policy.html">Refund Policy</a>
+        <a href="https://goldentreeawards.com/privacy-policy" target="_blank" rel="noopener">Privacy Policy</a>
+        <a href="https://goldentreeawards.com/cookies-policy" target="_blank" rel="noopener">Cookies Policy</a>
+        <a href="https://goldentreeawards.com/terms" target="_blank" rel="noopener">Terms &amp; Conditions</a>
+        <a href="https://goldentreeawards.com/refund-policy" target="_blank" rel="noopener">Refund Policy</a>
+        <a href="https://goldentreeawards.com/refund-agreement" target="_blank" rel="noopener">Refund Agreement</a>
+        <a href="https://goldentreeawards.com/jury-terms" target="_blank" rel="noopener">Jury Terms</a>
+        <a href="https://goldentreeawards.com/winner-package-terms" target="_blank" rel="noopener">Winner Package Terms</a>
         <a href="sitemap.xml">Sitemap</a>
       </div>
     </div>
@@ -245,25 +306,28 @@
 <script>
 (function () {
   /* --- Iframe source with tracking params --- */
-  var sourceDomain = window.location.hostname;
-  var sourceUrl    = window.location.href;
-  var urlParams    = new URLSearchParams(window.location.search);
+  const sourceDomain = window.location.hostname;
+  const sourceUrl    = window.location.href;
+  const urlParams    = new URLSearchParams(window.location.search);
 
-  var params = new URLSearchParams({
-    source_domain:  sourceDomain,
-    source_url:     sourceUrl,
-    referrer:       document.referrer || '',
-    utm_source:     urlParams.get('utm_source')  || 'website',
-    utm_medium:     urlParams.get('utm_medium')  || 'nomination_page',
-    utm_campaign:   urlParams.get('utm_campaign')|| 'award_nomination',
-    utm_content:    urlParams.get('utm_content') || '',
-    utm_term:       urlParams.get('utm_term')    || '',
-    gclid:          urlParams.get('gclid')       || '',
-    fbclid:         urlParams.get('fbclid')      || ''
+  const params = new URLSearchParams({
+    source_domain: sourceDomain,
+    source_url:    sourceUrl,
+    referrer:      document.referrer || '',
+    utm_source:    'website',
+    utm_medium:    'nomination_page',
+    utm_campaign:  'award_nomination'
   });
 
-  var iframe = document.getElementById('goldentreeNominationForm');
-  iframe.src = 'https://goldentreeawards.com/award-nomination?' + params.toString();
+  const optionalParams = ['gclid', 'fbclid', 'utm_content', 'utm_term'];
+  optionalParams.forEach(function(key) {
+    const value = urlParams.get(key);
+    if (value) params.append(key, value);
+  });
+
+  const iframeUrl = 'https://goldentreeawards.com/award-nomination?' + params.toString();
+  const iframe = document.getElementById('goldentreeNominationForm');
+  iframe.src = iframeUrl;
 
   /* --- Dynamic iframe height via postMessage --- */
   window.addEventListener('message', function (e) {
@@ -332,5 +396,6 @@
   });
 }());
 </script>
+<script>if('serviceWorker' in navigator){navigator.serviceWorker.register('service-worker.js');}</script>
 </body>
 </html>

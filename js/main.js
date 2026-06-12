@@ -116,7 +116,7 @@
   /* ---------- Image click → nomination ---------- */
   document.querySelectorAll('img[data-clickable]').forEach(img => {
     img.style.cursor = 'pointer';
-    img.addEventListener('click', () => { window.location.href = 'award-nomination.html'; });
+    img.addEventListener('click', () => { window.location.href = 'award-nomination'; });
   });
 
   /* ---------- Newsletter form ---------- */
